@@ -1,0 +1,49 @@
+{
+  "name": "knockout-typescript",
+  "version": "1.2.0",
+  "description": "An example of using TypeScript and Knockout’s type definitions to create view models, components and bindings that are strongly typed.",
+  "types": "dist/knockout.validation.d.ts",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "lint": "eslint . --ext .ts,.tsx",
+    "docs": "typedoc --entryPoints src/*.ts"
+  },
+  "dependencies": {
+    "knockout": "^3.5.1",
+    "knockout.validation": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "jest": "^27.0.1",
+    "jest-html": "^1.5.0",
+    "prettier": "^2.3.0",
+    "ts-jest": "^27.0.0",
+    "typedoc": "^0.20.36",
+    "typescript": "^4.2.4",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "keywords": [],
+  "author": "Jon Keeping",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}
