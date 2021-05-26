@@ -1,4 +1,6 @@
 {
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "sonarlint.connectedMode.project": {
     "connectionId": "SonarCloud",
     "projectKey": "ffactory-do_boilerplate-knockout"
